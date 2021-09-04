@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap');
+:root {
+    --gray: #333333;
+    --darkgray: #2e2e2e;
+    --yellow: #f3cd52;
+    --lightgray: rgba(255,255,255,0.4);
+    --white: #fff;
+    --transition: .5s ease;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Pontano Sans', sans-serif;
+    background: var(--gray);
+    line-height: 1.7;
+}
+
+hr {
+    background:var(--white);
+    width: 80%;
+    margin: auto;
+    margin-top:50px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--yellow);
+    transition: var(--transition);
+}
+
+form input {
+    margin: 20px 0;
+}
+
+form .button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--yellow);
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+form .button:hover {
+    background: var(--dark);
+    color: var(--yellow);
+    transition: var(--transition);
+}
+.navbar {
+    background-color: var(--yellow);
+    
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--white)!important;
+    transition: var(--transition);
+}
+
+header {
+    background-color: var(--yellow);
+}
+
+
+header img {
+    border: 15px solid rgb(237, 237, 237, .5);
+    height: 500px;
+    width: 50%;
+    transform: translateX(50%);
+}
+
+#sidebar {
+    padding-top: 50px;
+    color: var(--white);
+}
+
+#sidebar .button {
+    padding: 5px 15px;
+    border: none;
+    background: var(--yellow);
+}
+
+#sidebar .button:hover {
+    background: var(--dark);
+    color: var(--yellow);
+    transition: var(--transition);
+}
+
+
+#portfolio .button {
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+#portfolio .button:hover {
+     background: var(--dark);
+    color: var(--yellow);
+    transition: var(--transition);
+}
+.social-icons .nav-link .fab {
+    background: var(--yellow);
+    font-size: 2rem;
+    padding: 10px;
+    color: var(--gray);
+}
+
+.social-icons .nav-link .fab:hover {
+     background: var(--dark);
+    color: var(--yellow);
+    transition: var(--transition);
+}
+
+/*RESPONSIVE DESIGN*/
+
+@media(max-width:768px) {
+    #sidebar h3 {
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+    #portfolio img {
+        margin-top: 50px;
+    }
+    #portfolio .button {
+    margin-left: 0;
+    margin-top: 10px;
+}
+    #contact form {
+       position: relative;
+        right: 50px;
+    }
+    form .button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--yellow);
+    margin-top: 20px;
+    margin-left: 0px;
+}
+.social-icons .nav-link .fab {
+    background: var(--yellow);
+    font-size: 1rem;
+    padding: 8px;
+    color: var(--gray);
+    position: relative;
+    right: 80px;
+}
+    
+}
+    
+    
